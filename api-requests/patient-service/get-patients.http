@@ -1,0 +1,12 @@
+### GET request to get all patinets
+// implemented api gateway taht is why route is changed
+// replace --> lb-ddf94c1c.elb.localhost.localstack.cloud --> with localhost and vice-versa
+
+#GET http://lb-ddf94c1c.elb.localhost.localstack.cloud:4004/api/patients
+GET http://localhost:4004/api/patients
+Authorization: Bearer {{token}}
+#Authorization: Bearer {{token}} --> got this token by hitting login.http API route
+
+#Authorization: Bearer "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0NTU3NTMxNiwiZXhwIjoxNzQ1NjExMzE2fQ.Q78hbdek3LevJ2HTpxF6GZbXQBB5RayNrbSXPeW8-ZjptvxsSdxJAQ6B8-jGaQ8uGBJNnrqMWcb6qyQ5u1yGag"
+
+###
